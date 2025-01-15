@@ -11,7 +11,7 @@ const Auth = () => {
 
   const toggleVariant = useCallback(() => {
     setVariant((currentVariant) =>
-      currentVariant === "login" ? "register" : "login"
+      currentVariant === "login" ? "register" : "login "
     );
   }, []);
 
@@ -30,9 +30,7 @@ const Auth = () => {
                 {variant === "register" && (
                   <Input
                     label="Username"
-                    onChange={(ev: any) => {
-                      ev.target.value;
-                    }}
+                    onChange={(ev: any) => setName(ev.target.value)}
                     id="name"
                     value={name}
                   />
