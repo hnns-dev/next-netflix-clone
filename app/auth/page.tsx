@@ -11,7 +11,7 @@ const Auth = () => {
 
   const toggleVariant = useCallback(() => {
     setVariant((currentVariant) =>
-      currentVariant === "login" ? "register" : "login "
+      currentVariant === "login" ? "register" : "login"
     );
   }, []);
 
